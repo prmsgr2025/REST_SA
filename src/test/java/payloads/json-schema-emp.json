@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generated Schema",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "employee_name": {
+          "type": "string"
+        },
+        "employee_salary": {
+          "type": "integer"
+        },
+        "employee_age": {
+          "type": "integer"
+        },
+        "profile_image": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "employee_name",
+        "employee_salary",
+        "employee_age",
+        "profile_image"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "data",
+    "message"
+  ]
+}

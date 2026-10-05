@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://w3.org">
+
+    <!-- Root Element -->
+    <xs:element name="bookstore">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- A bookstore can have 0 to many book elements -->
+                <xs:element name="book" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Child Elements inside book -->
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="author" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                        </xs:sequence>
+                        <!-- Attribute for book -->
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
